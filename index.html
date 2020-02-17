@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Front End Dev</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <img src="images/logo.png" alt="company logo" class="logo">
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.png" alt="Hammer" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="images/exit.png" alt="exit menu">
+                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <img src="images/server.png" alt="Web technology Theme">
+            <h1>Web Hosting for the Modern Era</h1>
+            <p class="subhead">Growing to gain the desire place in the Tech World!</p>
+            <img src="images/scroll.png" alt="scroll down" class="scroll">
+
+        </section>
+    </div>
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon1.svg" alt="Calender-icon">
+                    <p>This a sample details of the above server icon to say that it works and gives what deserves,This a sample details of the above server icon to say that it works and gives what deserves,This a sample details of the above server icon to say that it works and gives what deserves. </p>
+                </li>
+                <li>
+                    <img src="images/icon2.svg" alt="Calender-icon">
+                    <p>This a sample details of the above server icon to say that it works and gives what deserves,This a sample details of the above server icon to say that it works and gives what deserves,This a sample details of the above server icon to say that it works and gives what deserves. </p>
+                </li>
+                <li>
+                    <img src="images/icon3.svg" alt="Calender-icon">
+                    <p>This a sample details of the above server icon to say that it works and gives what deserves,This a sample details of the above server icon to say that it works and gives what deserves,This a sample details of the above server icon to say that it works and gives what deserves. </p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="grey-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/user1.jpg" alt="User Testimonal">
+                        <blockquote>Once you have the power to see this world in computer form then you can deserve to
+                            fun this world with the Tech</blockquote>
+                        <figcaption>-Jane John</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user2.jpg" alt="User Testimonal">
+                        <blockquote>Do your work as your passion of life.It will bring not only the money but the water
+                            for your taste</blockquote>
+                        <figcaption>-Williamson</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Start your free trail !</h1>
+        <a href="#" class="cta">Get started</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/logo.png" alt="Company Logo">
+                </a>
+                <p class="address">18,Kolakadai street<br>Tiruneveli</p>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Poicy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var menu=document.getElementById('menu');
+        var nav=document.getElementById('nav');
+        var exit=document.getElementById('exit');
+
+menu.addEventListener('click',function(e)
+{
+    nav.classList.toggle('hide-mobile');
+    e.preventDefault();
+});
+exit.addEventListener('click',function(e)
+{
+    nav.classList.add('hide-mobile');
+    e.preventDefault();
+});
+
+        </script>
+
+</body>
+
+</html>
